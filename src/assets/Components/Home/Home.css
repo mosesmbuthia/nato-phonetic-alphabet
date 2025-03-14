@@ -65,3 +65,10 @@ input::placeholder {
     font-weight: 600;
 
 }
+.first-color{
+    color: black;
+}
+
+.second-color {
+    color: red;
+}

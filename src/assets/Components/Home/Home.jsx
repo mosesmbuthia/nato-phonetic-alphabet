@@ -32,9 +32,13 @@ function Home() {
         return text
             .toUpperCase()
             .split("")
-            .map((char) => phoneticAlphabet[char] || char)
+            .map((char, index) => {
+            const colorAlternate = index % 2 === 0 ? "first-color" : "second-color";
+            return `<span class=${colorAlternate}>${phoneticAlphabet[char]}" <span/>`;
+            })
             .join(" ");
-    };
+    
+        }
 
     return (
         <div className="home-page">
@@ -55,8 +59,10 @@ function Home() {
                     />
                 </div>
                 <div className="output">
-                <p className="display">{input && convertToPhonetic(input)}</p>
-                </div>
+                <p
+            className="display"
+            dangerouslySetInnerHTML={{ __html: convertToPhonetic(input) }}
+          />                </div>
                 
             </div>
             <footer className="footer">&copy; developed by Moses Mbuthia 2025</footer>
