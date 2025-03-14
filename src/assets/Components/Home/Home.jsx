@@ -7,7 +7,7 @@ function Home() {
             <h1>nato phonetic alpabet</h1>
             <p>convert text to <a href="https://en.wikipedia.org/wiki/NATO_phonetic_alphabet">nato phonetic alphabet</a></p>
             <div className="input-form">
-                <input type="text" />
+                <input type="text" placeholder="type your text here..." />
             </div>
         </div>
       
