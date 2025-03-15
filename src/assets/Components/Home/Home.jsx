@@ -29,17 +29,22 @@ function Home() {
   };
 
   const convertToPhonetic = (text) => {
-    return text
-      .toUpperCase()
-      .split("")
-      .map((char) => phoneticAlphabet[char] || char)
-      .join(" ");
+    return text.split("").map((char, index) => {
+        const natoPhonetic = phoneticAlphabet[char.toUpperCase()] || char;
+      
+      const colorAlternate = index % 2 === 0 ? "black" : "green";
+      return (
+        <span key={index} style={{ color: colorAlternate }}>
+        {natoPhonetic}{" "}
+      </span>
+      );
+    });
   };
 
   return (
     <div className="home-page">
       <div className="home">
-        <h1>nato phonetic alpabet</h1>
+        <h1>nato phonetic alphabet</h1>
         <p>
           convert text to{" "}
           <a href="https://en.wikipedia.org/wiki/NATO_phonetic_alphabet">
