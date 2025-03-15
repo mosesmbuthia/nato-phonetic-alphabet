@@ -1,5 +1,5 @@
 .home-page {
-    background-color: rgb(246,248,213);
+    background-color: lightseagreen;
     height: 100vh;
 
 }
@@ -9,7 +9,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    text-transform: uppercase;color: rgb(79,149,157);
+    text-transform: uppercase;color: rgb(79,8,34);
     padding-top: 2rem;
     font-family: "Open Sans", sans-serif;
 
@@ -32,7 +32,7 @@
 
 .home p a {
     font-size: 16px;
-    color: rgb(79,149,157);
+    color: rgb(0,56,54);
     font-weight: 600;
 }
 
@@ -55,6 +55,7 @@ input::placeholder {
 
 .output {
     padding-top: 2rem;
+    font-weight: 900;
 }
 
 .footer {
@@ -69,6 +70,6 @@ input::placeholder {
     color: black;
 }
 
-.green {
-    color: red;
+.green-color {
+    color: blue;
 }
